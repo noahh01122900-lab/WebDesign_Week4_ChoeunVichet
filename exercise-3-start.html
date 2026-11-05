@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <header >header</header>
+    <section class="middle">
+        <main>
+        
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </main>
+    <div class="sidebar">sidebar</div>
+</section>
+    <footer>footer</footer>
+    </div>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            gap: 1rem;
+            padding: 1rem ;
+        }
+        header{
+            background-color: #1e90ff;
+            box-shadow: 0 4px 0 #0077ea;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            flex-shrink: 0;
+        }
+        .middle{
+            display: flex;
+            flex: 1;
+            gap: 1rem;
+            min-height: 0;
+        }
+        main {
+            background-color: #3cb371;
+            box-shadow: 0 4px  0#2f8d59;
+            border-radius: 0.5rem;
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 1rem;
+            padding: 2rem;
+
+        }
+        .item{
+            background-color: #2f8d59;
+            box-shadow: 2px 4px 2px #226741;
+            border-radius: 0.5rem;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .sidebar{
+            background-color: #ff6347;
+            box-shadow:  0 4px 0 #e02200;
+            border-radius: 0.5rem;
+            width: 12rem;
+            flex-shrink: 0;
+            padding: 2rem;
+        }
+        footer{
+            background-color: #4169e1;
+            box-shadow:  0 4px 0 #1d44b8;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            flex-shrink: 0;
+        }
+    </style>
+
+</body>
+</html>
